@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,35 +9,61 @@
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/purple_200"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_500"
         android:text="@string/button_label_toast"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:onClick="showToast"/>
 
-    <TextView
-        android:id="@+id/show_count"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button_zero"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFF00"
-        android:gravity="center"
-        android:text="@string/count_initial_value"
-        android:textColor="@color/purple_500"
-        android:textSize="160sp"
-        android:textStyle="bold"
         android:layout_below="@+id/button_toast"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="zeroCount"
+        android:text="@string/button_label_zero"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/button_count"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/show_count"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="@color/purple_200"
+        android:layout_below="@+id/button_zero"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/purple_700"
+        android:onClick="countUp"
         android:text="@string/button_label_count"
-        android:textColor="@android:color/black"
-        android:onClick="countUp"/>
+        android:textColor="@android:color/white" />
+
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_toast"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@+id/button_count"
+        android:background="#FFFF00"
+        android:gravity="center"
+        android:text="@string/count_initial_value"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="200sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>
