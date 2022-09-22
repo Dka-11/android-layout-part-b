@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Kuliah/Semester-5/Pemrograman-Mobile/Projects/Week_3_Layout/Android_01.2_Part_B_The_Layout_Editor/app/src/main/res/layout-land/activity_main.xml" value="0.25" />
+        <entry key="..\:/Kuliah/Semester-5/Pemrograman-Mobile/Projects/Week_3_Layout/Android_01.2_Part_B_The_Layout_Editor/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.18" />
         <entry key="..\:/Kuliah/Semester-5/Pemrograman-Mobile/Projects/Week_3_Layout/Android_01.2_Part_B_The_Layout_Editor/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
       </map>
     </option>
